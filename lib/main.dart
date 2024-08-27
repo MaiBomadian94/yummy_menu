@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:yummy_menu/routes/page_routes_name.dart';
-import 'package:yummy_menu/routes/routes.dart';
+
+import 'helper/routes/page_routes_name.dart';
+import 'helper/routes/routes.dart';
 
 GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 

@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:yummy_menu/routes/page_routes_name.dart';
+import '../../helper/routes/page_routes_name.dart';
 import '../../main.dart';
 
 class SplashView extends StatefulWidget {
