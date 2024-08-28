@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:yummy_menu/routes/page_routes_name.dart';
+import '../../helper/routes/page_routes_name.dart';
 import '../../main.dart';
 
 class SplashView extends StatefulWidget {
@@ -15,9 +15,10 @@ class _SplashViewState extends State<SplashView> {
   void initState() {
     super.initState();
     Timer(
-        const Duration(seconds: 3),
-        () => navigatorKey.currentState!
-            .pushReplacementNamed(PageRoutesName.onBoarding));
+      const Duration(seconds: 3),
+      () => navigatorKey.currentState!
+          .pushReplacementNamed(PageRoutesName.onBoarding),
+    );
   }
 
   @override

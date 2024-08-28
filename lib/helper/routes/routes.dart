@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:yummy_menu/routes/page_routes_name.dart';
+import 'package:yummy_menu/helper/routes/page_routes_name.dart';
+import 'package:yummy_menu/test.dart';
 import 'package:yummy_menu/views/search/pages/search_view.dart';
 import 'package:yummy_menu/views/splash/splash_view.dart';
-import '../views/home/pages/home_view.dart';
-import '../views/on_boarding/on_boarding_view.dart';
-import '../views/products/pages/products_detail.dart';
+import '../../views/home/pages/home_view.dart';
+import '../../views/on_boarding/on_boarding_view.dart';
+import '../../views/products/pages/products_detail.dart';
 
 class Routes {
   static Route<dynamic> onGenerate(RouteSettings settings) {
