@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yummy_menu/views/on_boarding/widgets/custom_elevated_button.dart';
 import '../../styles/dimensions.dart';
 import '../../utils/app_constants.dart';
 
@@ -51,6 +52,8 @@ class OnBoardingView extends StatelessWidget {
                 color: const Color(0xff666666),
               ),
             ),
+            SizedBox(height: 0.118*MediaQuery.of(context).size.height),
+            const CustomElevatedButton(),
           ]),
         ));
   }
