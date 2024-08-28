@@ -11,26 +11,47 @@ class OnBoardingView extends StatelessWidget {
         decoration: const BoxDecoration(
           color: Colors.white,
         ),
-        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-          Image.asset('assets/images/onBoarding.png'),
-          SizedBox(height:.049*MediaQuery.of(context).size.height ,),
-          Text(
-            'Spend time with loved ones',
-            style: Constants.theme.textTheme.titleMedium
+        child: Padding(
+          padding: EdgeInsets.symmetric(
+            horizontal: Dimensions.padding15h,
+            vertical: Dimensions.padding15v,
           ),
-          Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: Dimensions.padding15h,
-              vertical: Dimensions.padding15v,
+          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            RichText(
+              text: TextSpan(children: [
+                TextSpan(
+                  text: 'Welcome to',
+                  style: Constants.theme.textTheme.titleLarge
+                      ?.copyWith(fontSize: FontSizes.fontSizeOverLarge()),
+                ),
+                TextSpan(
+                  text: ' Yummie !  \n',
+                  style: Constants.theme.textTheme.titleLarge?.copyWith(
+                      color: Constants.theme.primaryColor,
+                      fontSize: FontSizes.fontSizeOverLarge()),
+                ),
+              ]),
             ),
-            child: Text(
-              'Experience a space close to nature, a variety of vegetarian dishes for you and your loved ones.',
+            SizedBox(
+              height: Dimensions.padding15v,
+            ),
+            Image.asset('assets/images/onBoarding.png'),
+            SizedBox(
+              height: .049 * MediaQuery.of(context).size.height,
+            ),
+            Text('Spend time with loved ones',
+                style: Constants.theme.textTheme.titleMedium),
+            SizedBox(
+              height: Dimensions.padding15v,
+            ),
+            Text(
+              'Enjoy a range of delicious dishes made from fresh ingredients, perfect for everyone to enjoy.',
               textAlign: TextAlign.center,
               style: Constants.theme.textTheme.bodyMedium?.copyWith(
                 color: const Color(0xff666666),
               ),
             ),
-          ),
-        ]));
+          ]),
+        ));
   }
 }

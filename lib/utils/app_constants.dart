@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import '../main.dart';
 
@@ -23,6 +24,10 @@ import '../main.dart';
 class Constants {
   static ThemeData get theme {
     return Theme.of(navigatorKey.currentState!.context);
+  }
+
+  static AppLocalizations? get locale {
+    return AppLocalizations.of(navigatorKey.currentState!.context);
   }
 
   static double get screenWidth {

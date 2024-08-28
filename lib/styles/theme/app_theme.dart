@@ -4,6 +4,7 @@ import '../dimensions.dart';
 class ApplicationThemeManager {
   static ThemeData theme = ThemeData(
     primaryColor: const Color(0xffF26333),
+    useMaterial3: false,
     textTheme: TextTheme(
       titleLarge: TextStyle(
         fontSize: FontSizes.fontSizeExtraLarge2(),
